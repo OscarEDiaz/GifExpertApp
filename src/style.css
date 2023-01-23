@@ -1,0 +1,80 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(234, 234, 234);
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  padding: 50px;
+}
+
+form {
+  margin-top: 15px;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(97, 32, 158);
+  color: black;
+  font-size: 1.2rem;
+  outline: none;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+ol {
+  width: 100%;
+}
+
+.card-grid {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.card {
+  align-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.03);
+  display: flex;
+  height: 0%;
+  width: 300px;
+  object-fit: contain;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.card p {
+  background-color: white;
+  font-size: 1rem;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.card img {
+  width: 100%;
+}
