@@ -3,7 +3,7 @@ import { useState } from "react"
 export const AddCategory = ({onNewCategory}) => {
     const [inputValue, setInputValue] = useState("");
 
-    const onInputChange = ({target:{value}}) => {
+    const onInputChange = ({ target: { value } }) => {
         setInputValue(value);
     }
 
@@ -18,7 +18,7 @@ export const AddCategory = ({onNewCategory}) => {
     }
 
     return (
-        <form onSubmit={onSubmit}>
+        <form onSubmit={onSubmit} aria-label="form">
             <input 
                 type="text"
                 placeholder="Search gifs"
