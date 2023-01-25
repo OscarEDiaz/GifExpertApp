@@ -78,3 +78,15 @@ ol {
 .card img {
   width: 100%;
 }
+
+.delete-btn {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  background-color: rgb(221, 48, 48);
+  color: #FFF;
+}
+
+.delete-btn:active {
+  filter: brightness(1.5);
+}

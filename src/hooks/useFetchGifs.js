@@ -10,6 +10,11 @@ export const useFetchGifs = (category) => {
         setImages(images);
         setIsLoading(false);
     }
+
+    const removeImage = (id) => {
+        const newImagesArray = images.filter(img => img.id !== id);
+        setImages(newImagesArray);
+    }
     
     useEffect(() => {
         getImagesArray(category);
@@ -17,6 +22,7 @@ export const useFetchGifs = (category) => {
 
     return {
         images,
-        isLoading
+        isLoading,
+        removeImage
     }
 }

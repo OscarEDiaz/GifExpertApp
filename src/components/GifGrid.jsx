@@ -8,7 +8,7 @@ import { GifItem } from "./GifItem";
 
 
 export const GifGrid = ({category}) => {
-    const {images, isLoading} = useFetchGifs(category);
+    const {images, isLoading, removeImage} = useFetchGifs(category);
 
     return (
         <>
@@ -19,6 +19,7 @@ export const GifGrid = ({category}) => {
                     images.map(image => (
                         <GifItem 
                             key={image.id} 
+                            onDeletePressed={removeImage}
                             {...image}
                         /> 
                     ))
